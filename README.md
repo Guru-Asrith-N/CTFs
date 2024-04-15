@@ -14,11 +14,11 @@
 
 ## Solution 
 
-Since it was mentioned that q was XORed with the number 123456789, so we XORed the salted_q with 123456789 since XORing any number twice gives the same number. Saved the number obtained as q .
-To find n, we multiplied p with q.
-Since p,q and e are given, we found d using the formula `e.d ≡ 1 mod (p-1)(q-1)`.
-Since c,d and n are given, we found m using the formul `m = c^d mod n`.
-We get the message m which we convert to bytes.
+Since it was mentioned that q was XORed with the number 123456789, so we XORed the salted_q with 123456789 since XORing any number twice gives the same number. Saved the number obtained as q.   
+To find n, we multiplied p with q.   
+Since p,q and e are given, we found d using the formula `e.d ≡ 1 mod (p-1)(q-1)`.   
+Since c,d and n are given, we found m using the formul `m = c^d mod n`.   
+We get the message m which we convert to bytes.   
 
 ```
 from sympy import *
